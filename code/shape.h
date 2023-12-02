@@ -11,6 +11,13 @@ public:
   glm::vec3* world_vertices;
   const int* size;
 
+  virtual void update_pos(glm::vec3 new_pos) {
+    pos += new_pos;
+    for (int i = 0; i < *size; i++) {
+      world_vertices[i] += new_pos;
+    }
+  }
+
 protected:
   virtual void gen_and_bind_vao_vbo() {
     glGenVertexArrays(1, &vao);

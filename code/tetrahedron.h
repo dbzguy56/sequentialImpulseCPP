@@ -6,10 +6,9 @@
 
 class Tetrahedron : public Shape {
 public:
+  // TODO: Better naming?
   static const int VERTICES_NUM_VEC3 = 12;
   static const int VERTICES_NUM_FLOAT = VERTICES_NUM_VEC3 * 3;
-  //glm::vec3 model_vertices[VERTICES_NUM_VEC3];
-  //glm::vec3 world_vertices[VERTICES_NUM_VEC3];
 
   Tetrahedron(glm::vec3 tetrahedronPos) {
     pos = tetrahedronPos;

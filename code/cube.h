@@ -8,8 +8,6 @@ class Cube : public Shape {
 public:
   static const int VERTICES_NUM_VEC3 = 36;
   static const int VERTICES_NUM_FLOAT = VERTICES_NUM_VEC3 * 3;
-  //glm::vec3 model_vertices[VERTICES_NUM_VEC3];
-  //glm::vec3 world_vertices[VERTICES_NUM_VEC3];
 
   Cube(glm::vec3 cubePos) {
     pos = cubePos;
@@ -32,7 +30,6 @@ public:
   }
 
 private:
-
 
   float model_vertices_float[VERTICES_NUM_FLOAT] = {
     // positions
