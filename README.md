@@ -12,8 +12,8 @@ Currently the code detects collision using the [gjk algorithm](https://en.wikipe
 
 ## Images
 ![gjk_1](/assets/images/gjk_1.png)
-![gjk_2](/assets/images/gjk_1.png)
-![gjk_3](/assets/images/gjk_1.png)
+![gjk_2](/assets/images/gjk_2.png)
+![gjk_3](/assets/images/gjk_3.png)
 
 From the images above you can see that when the red tetrahedron collides with the blue cube, the green simplex appears. The gjk algorithmn relies on a support function that generates the points that would lie on the minkowski difference of the two colliding objects. These points make up the green simplex, and if this simplex contains the origin, then that means the two objects are colliding! (The black cube being the origin in this case)
 
