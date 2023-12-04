@@ -5,6 +5,7 @@ This project is a work in progress aimed at simulating collision detection and r
 
 Currently the code detects collision using the [gjk algorithm](https://en.wikipedia.org/wiki/Gilbert%E2%80%93Johnson%E2%80%93Keerthi_distance_algorithm). Another great interactive demo of the gjk (and minkowski difference) is located at [this page](https://cse442-17f.github.io/Gilbert-Johnson-Keerthi-Distance-Algorithm/).
 
+Originally I started this project in Jai, check it out at this [link](https://github.com/dbzguy56/sequentialImpulse).
 
 ## Video on Youtube
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=eXs0cLVw3w8" target="_blank">
@@ -48,7 +49,7 @@ You can run the demo by running the following command at the base of the project
    - If it's not under the current set directory, it maybe under `C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat`
 
 
-After you have made you have the requirements, you build with simply by running the command.
+After that is setup, you build with simply by running the command.
 
 ```bash
 .\build.bat
