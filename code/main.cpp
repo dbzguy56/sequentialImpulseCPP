@@ -234,7 +234,6 @@ bool gjk(Shape shapeA, Shape shapeB, vector<glm::vec3> &simplex) {
   // in the future.
   int loopIterations = 0;
   while (evolveResult == STILL_EVOLVING && loopIterations != 15) {
-    cout << "pos = " << glm::to_string(shapeA.pos) << endl;
     evolveResult = evolveSimplex(simplex, shapeA, shapeB, direction);
     loopIterations++;
   }
@@ -465,8 +464,6 @@ int wmain(int argc, char *argv[]) {
 
     if (collision) {
       // Draw simplex
-      cout << "------------------------- Draw simplex" << endl;
-      printVec3Vector(simplex);
       vector<float> simplexVector;
       for (int i = 0; i < simplex.size(); i++) {
         simplexVector.push_back(simplex[i].x);
